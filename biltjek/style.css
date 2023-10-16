@@ -89,3 +89,7 @@ button:hover {
 .yellow {
     background-color: goldenrod;
 }
+
+.text-red {
+    color: red;
+}

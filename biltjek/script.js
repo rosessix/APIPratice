@@ -25,6 +25,7 @@ const searchPlate = async (plate) => {
         <p>Nummerplade: ${data.regNr}</p>
         <p>Stel NR: ${data.stelNr}</p>
         <p>Drivkraft: ${data.drivkraftTypeNavn}</p>
+        ${data.status === 'Afmeldt' ? '<p class="text-red">Status: Afmeldt</p>' : ''}
 
         <div id="vehicle-equipment">Mærkværdigt udstyr: </div>
     `)
