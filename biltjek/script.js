@@ -6,7 +6,6 @@ const searchPlate = async (plate) => {
     if (plate == undefined) {
         plate = $("#numberplate").val();
     }
-    console.log(plate);
 
     let request = await fetch(`${API_URL}/${plate}?amount=1`);
     let json;
@@ -77,15 +76,16 @@ const getMotColor = (result) => {
         case 'Middel':
         case 'Kan godkendes efter omsyn hos (om)synsvirksomhed':
             return 'yellow'
-        case 'idk':
+        case 'idk': 
+        // Jeg kunne ikke finde en bil der decideret havde dumpet syn, så her skal der stå dumpet syn eller noget lignene
             return 'red'
     }
 
     return ''
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        searchPlate('DM57724')
-    }, 500);
-})
+// '
+// document.addEventListener('DOMContentLoaded', () => {
+//     setTimeout(() => {
+//         searchPlate('DM57724')
+//     }, 500);
+// })'
