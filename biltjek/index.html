@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Bil tjek!</title>
+</head>
+<body>
+    <main>
+        <h1 class="title">Velkommen til Bil-Tjek.dk, her kan du få oplysninger om det ønskede køretøj.</h1>
+        <input type="text" placeholder="BT84018" id="numberplate">
+        <button onclick="searchPlate()">Søg</button>
+    </main>
+
+
+    <div class="grid">
+        <div>
+            <h2>Bil</h2>
+            <div id="vehicle">
+
+            </div>
+        </div>
+        <div>
+            <h2>Syns rapporter</h2>
+            <div id="mot">
+                <!-- <div class="mot-card">
+                    <h3>Betinget godkendt</h3>
+                    <p>NF Bilsyn</p>
+                    <p>Fejl: </p>
+                </div> -->
+            </div>
+        </div>
+        <div>
+            <h2>Udgifter</h2>
+            <div id="expenses">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
